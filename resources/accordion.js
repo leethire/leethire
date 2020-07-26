@@ -2,7 +2,7 @@ const questionList = Object.keys(_questions).map(q=>
 `<button class="accordion">`+q+`</button>
 <div class="panel">
   `+_questions[q].map(
-    x=>`<li class="question"><a href="`+x.link+`">`+x.name+`</a></li>`)
+    x=>`<li class="question"><a href="`+x.link+`" rel="nofollow">`+x.name+`</a></li>`)
     .join('')+`
 </div>`).join('');
 
