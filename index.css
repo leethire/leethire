@@ -13,7 +13,6 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  height: 100vh;
   color: #fff;
 }
 
@@ -26,7 +25,6 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  height: 100vh;
   color: #1c1c1c;
 }
 
@@ -223,4 +221,15 @@ h2 {
 
 li.question {
   margin: 5px;
+}
+
+.share {
+  text-align: center;
+  padding: 10px 0px 40px 0px;
+  color: black;
+}
+
+
+.share>img {
+  padding: 0px 10px;
 }
