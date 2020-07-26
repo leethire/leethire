@@ -1,7 +1,9 @@
 const questionList = Object.keys(_questions).map(q=>
 `<button class="accordion">`+q+`</button>
 <div class="panel">
-  `+_questions[q].map(x=>`<li class="question">`+x.name+`</li>`).join('')+`
+  `+_questions[q].map(
+    x=>`<li class="question"><a href="`+x.link+`">`+x.name+`</a></li>`)
+    .join('')+`
 </div>`).join('');
 
 questions.innerHTML = questionList;
