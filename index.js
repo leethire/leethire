@@ -1,8 +1,13 @@
-// Coin Flip Simulation
-
 let coinFlipButton = document.getElementById('coinFlipButton');
 let outcome = document.querySelector('.outcome');
 let tossCount = 0;
+
+if(localStorage.tossCount){
+  tossCount = parseInt(localStorage.tossCount);
+  if(tossCount > 4) {
+    document.getElementById("resourceLink").style.display = 'block';
+  }
+}
 
 const getClickHandler = bool => {
   return function() {
@@ -11,7 +16,6 @@ const getClickHandler = bool => {
     outcome.classList.toggle('flip');
     outcome.classList.add('toss');
 
-    // Waits 3sec to display flip result
     setTimeout(function() {
       if (randomNumber === 1) {
         outcome.innerHTML = '<img class="coin" src="./assets/heads.png"/>';
@@ -20,9 +24,8 @@ const getClickHandler = bool => {
       }
       outcome.classList.remove('toss');
       tossCount++;
-      if(tossCount > 4
-      //|| true
-      ) {
+      localStorage.setItem("tossCount", tossCount);
+      if(tossCount > 4) {
         document.getElementById("resourceLink").style.display = 'block';
       }
     }, 800);
