@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html>
-<title>Leethire</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-/*   background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg'); */
-   background-image: url('/hiring.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leethire.com</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
 <body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-<!--   <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    LeetHire
-  </div> -->
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">LeetHire</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">Professional Hiring Solutions</p>
+  <div class="logo">
+    <a href="/">
+      <img class="logo" src="./assets/leethire.png" alt="Leethire.com Logo">
+    </a>
   </div>
-  
-</div>
-
+  <div class="container" id="coinFlip">
+    <h3>Win the Toss to get hired 💁🏽‍♂️</h3>
+    <div class="outcome">
+      <div class="down-arrow">
+        <img class="down-arrow" src="./assets/down-arrow.gif" alt="Choose your luck">
+      </div>
+    </div>
+    <h3>Try your luck</h3>
+    <div class="buttons">
+      <button id="headsButton">HEADS</button>
+      <button id="tailsButton">TAILS</button>
+    </div>
+    <div class="center" id="resourceLink">
+      <span>Aren't lucky?</span>
+      <a href="/resources">
+        <h3>Try Easier Trick</h3>
+      </a>
+    </div>
+  </div>
+  <script src="index.js"></script>
 </body>
+
 </html>
